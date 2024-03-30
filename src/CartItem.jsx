@@ -34,7 +34,7 @@ const CartItem = ({ product }) => {
           </a>
         </div>
 
-        <p className='me-3 mt-4 fw-bold'>&#8377;{(product.price).toLocaleString()}</p>
+        <p className='me-3 mt-4 fw-bold'>&#8377;{(product.price).toLocaleString()}.00</p>
         <MdDelete className='delete_button mt-4 fw-bold' onClick={() => {
           removeFromCart(product.id)
         }} />
