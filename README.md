@@ -8,6 +8,7 @@
  <p>All the data passed parent to child component through Context API.</p>
   <h4>Used Tools.</h4>
   <p>It works with React Router-Dom.</p>
+  <br>
 <ul>
   <li>Html</li>
   <li>CSS</li>
@@ -15,6 +16,7 @@
   <li>Javascript</li>
   <li>React JS</li>
 </ul>
+<br>
 <h4>Npm Packages are used:</h4>
 <ul>
   <li>https://www.npmjs.com/package/bootstrap</li>
@@ -22,8 +24,10 @@
   <li>https://www.npmjs.com/package/react-rating-stars-component</li>
   <li>https://www.npmjs.com/package/react-icons</li>
 </ul>
+<br>
 <h3>Deployed URL</h3>
-
+https://shoppigcart.netlify.app/
+<br>
 
 <h5>Screenshots</h5>
 1.Home Page
