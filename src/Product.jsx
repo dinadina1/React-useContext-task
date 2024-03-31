@@ -12,9 +12,9 @@ const Product = ({ product }) => {
       style={{ maxWidth: "70%", Height: "250px", margin: "5px auto 5px auto" }}>
       <div className="row">
         <div className="col-lg-3 col-sm-12">
-          <img src={product.thumbnail} className="card-img-top" alt={product.title} />
+          <img src={product.thumbnail} className="card-img-top w-100" alt={product.title} />
         </div>
-        <div className="col-lg-7 col-sm-12 d-flex justify-content-center align-items-center">
+        <div className="col-lg-7 col-sm-12 d-flex justify-content-start align-items-center">
           <div>
             <h5 className="card-title">{product.title}</h5>
             <p className="card-text">

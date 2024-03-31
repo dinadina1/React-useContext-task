@@ -1,4 +1,6 @@
 import { createContext, useEffect, useState } from "react";
+import {  Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DataContext = createContext({})
 export const DataProvider = ({ children }) => {
@@ -109,12 +111,14 @@ export const DataProvider = ({ children }) => {
     const addToCart = (id) => {
         const productItem = products.map((product) => product.id == id ? { ...product, cart: true } : product);
         setProducts(productItem);
+        notifyToast("Successfully added into Cart");
     }
 
     // Remove product from cart
     const removeFromCart = (id) => {
         const removedItem = products.map((product) => product.id == id ? { ...product, cart: false } : product)
         setProducts(removedItem);
+        notifyToast("Successfully removed from Cart")
     }
 
     // Updata when clicking cart button
@@ -149,6 +153,29 @@ export const DataProvider = ({ children }) => {
             setCartLists(cartQuan)
         }
     }
+
+    // const reactToastify = ()=>{
+    //     toast.success('🦄 Wow so easy!', {
+    //         position: "top-right",
+    //         autoClose: 2000,
+    //         hideProgressBar: false,
+    //         closeOnClick: true,
+    //         pauseOnHover: false,
+    //         draggable: true,
+    //         progress: undefined,
+    //         theme: "colored",
+    //         transition: Bounce,
+    //         });
+    // }
+    const notifyToast = (message) => {
+        toast.success(`${message}`, {
+          position: "top-right",
+          autoClose: 2000,
+          theme: "colored",
+          transition: Zoom,
+          pauseOnHover: false
+        });
+      }
 
     return (
         <DataContext.Provider value={{

@@ -5,6 +5,8 @@ import Home from './Home'
 import Cart from './Cart'
 import { DataProvider } from './context/DataContext'
 import Navbar from "./Navbar";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
             <Route path='cart' element={<Cart />} />
           </Route>
         </Routes>
+        <ToastContainer />
       </DataProvider>
     </>
   )
