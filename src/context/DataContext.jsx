@@ -153,20 +153,7 @@ export const DataProvider = ({ children }) => {
             setCartLists(cartQuan)
         }
     }
-
-    // const reactToastify = ()=>{
-    //     toast.success('🦄 Wow so easy!', {
-    //         position: "top-right",
-    //         autoClose: 2000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: false,
-    //         draggable: true,
-    //         progress: undefined,
-    //         theme: "colored",
-    //         transition: Bounce,
-    //         });
-    // }
+    
     const notifyToast = (message) => {
         toast.success(`${message}`, {
           position: "top-right",
