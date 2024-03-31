@@ -23,6 +23,7 @@
   <li>https://www.npmjs.com/package/react-router-dom</li>
   <li>https://www.npmjs.com/package/react-rating-stars-component</li>
   <li>https://www.npmjs.com/package/react-icons</li>
+ <li>https://www.npmjs.com/package/react-toastify</li>
 </ul>
 <br>
 <h3>Deployed URL</h3>
