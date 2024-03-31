@@ -6,9 +6,9 @@
 <p>In cart section added some functionalities like increase or decrease 
  product quantity, automatically update total quantity and price.</p>
  <p>All the data passed parent to child component through Context API.</p>
-  <h4>Used Tools.</h4>
   <p>It works with React Router-Dom.</p>
   <br>
+  <h4>Used Tools.</h4>
 <ul>
   <li>Html</li>
   <li>CSS</li>
