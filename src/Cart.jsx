@@ -30,7 +30,10 @@ const Cart = () => {
               </div>
             </>
           ) : (
-            <h2 className='text-center p-5'>Your Cart is Empty...</h2>
+            <>
+              <BacktoHome />
+              <h2 className='text-center p-5'>Your Cart is Empty...</h2>
+            </>
           )
         }
 
